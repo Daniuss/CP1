@@ -1,8 +1,13 @@
+👥 Integrantes do Grupo
+
+| Caio Rossini | RM 555084|
+| Gabriel Danius | RM 555747|
+| Carlos Eduardo | RM 
+
+
 🍴 FIAP Cantina App
 
 > Aplicativo mobile desenvolvido como MVP para o Checkpoint 1 da disciplina de Mobile Development & IoT — FIAP 3º Ano Engenharia de Software.
-
----
 
 📖 Sobre o Projeto
 
@@ -27,43 +32,9 @@ Funcionalidades Implementadas
 - ✅ Estados vazios para todas as situações
 - ✅ Feedback visual de loading ao enviar pedido
 
----
-
-👥 Integrantes do Grupo
-
-| [Caio Rossini] | RM 555084|
-| [Gabriel Danius] | RM 555747|
-
 🚀 Como Rodar o Projeto
 
-Pré-requisitos
-- [Node.js](https://nodejs.org/) v18 ou superior
-- [Expo Go](https://expo.dev/client) instalado no celular (iOS ou Android)
-- NPM ou Yarn
-
 📱 Demonstração
-
-Telas do App
-
-> Tela 1 — Cardápio
-> *(inserir print aqui)*
-
-> **Tela 2 — Carrinho**
-> *(inserir print aqui)*
-
-> **Tela 3 — Confirmação de Pedido**
-> *(inserir print aqui)*
-
-> **Tela 4 — Acompanhar Pedido**
-> *(inserir print aqui)*
-
-> **Tela 5 — Histórico**
-> *(inserir print aqui)*
-
-Vídeo/GIF de demonstração
-> *(inserir link do YouTube ou Google Drive aqui)*
-
----
 
 🏗️ Decisões Técnicas
 
@@ -109,8 +80,6 @@ O projeto utiliza **Expo Router** com estrutura de arquivos:
 - **Tab Navigator** (`app/(tabs)/`): Navegação principal entre Cardápio, Meu Pedido e Histórico
 - **Stack Navigator** (`app/_layout.tsx`): Para telas modais (Carrinho) e telas de fluxo (Confirmação)
 - **Rotas dinâmicas**: `app/pedido/carrinho` como modal e `app/pedido/confirmacao` como tela de stack sem voltar
-
----
 
 ## 🔮 Próximos Passos
 
