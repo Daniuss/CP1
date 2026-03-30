@@ -1,21 +1,20 @@
-# 🍴 FIAP Cantina App
+🍴 FIAP Cantina App
 
 > Aplicativo mobile desenvolvido como MVP para o Checkpoint 1 da disciplina de Mobile Development & IoT — FIAP 3º Ano Engenharia de Software.
 
 ---
 
-## 📖 Sobre o Projeto
+📖 Sobre o Projeto
 
-### Nome do App
-**FIAP Cantina** — Fila Digital da Cantina
+FIAP Cantina — Fila Digital da Cantina
 
-### Problema que Resolve
+Problema que Resolve
 A cantina da FIAP concentra um grande volume de alunos nos intervalos entre aulas, gerando longas filas e desperdício de tempo. Muitos alunos desistem de comer por não terem tempo suficiente para esperar. O processo atual é inteiramente presencial e manual: o aluno precisa ir até a cantina, escolher o item no balcão, aguardar na fila para pedir e somente depois aguardar o preparo.
 
-### Operação Escolhida
+Operação Escolhida
 **Pedido antecipado e acompanhamento de fila na cantina** — o aluno realiza seu pedido pelo app antes mesmo de chegar à cantina, recebe um número de retirada e acompanha o status em tempo real, retirando o pedido já pronto sem precisar esperar na fila.
 
-### Funcionalidades Implementadas
+Funcionalidades Implementadas
 - ✅ Cardápio digital com categorias (Lanches, Refeições, Bebidas, Sobremesas)
 - ✅ Filtro por categoria com scroll horizontal
 - ✅ Adicionar e remover itens do carrinho diretamente no cardápio
@@ -30,23 +29,23 @@ A cantina da FIAP concentra um grande volume de alunos nos intervalos entre aula
 
 ---
 
-## 👥 Integrantes do Grupo
+👥 Integrantes do Grupo
 
 | [Caio Rossini] | RM 555084|
 | [Gabriel Danius] | RM 555747|
 
-## 🚀 Como Rodar o Projeto
+🚀 Como Rodar o Projeto
 
-### Pré-requisitos
+Pré-requisitos
 - [Node.js](https://nodejs.org/) v18 ou superior
 - [Expo Go](https://expo.dev/client) instalado no celular (iOS ou Android)
 - NPM ou Yarn
 
-## 📱 Demonstração
+📱 Demonstração
 
-### Telas do App
+Telas do App
 
-> **Tela 1 — Cardápio**
+> Tela 1 — Cardápio
 > *(inserir print aqui)*
 
 > **Tela 2 — Carrinho**
@@ -61,14 +60,14 @@ A cantina da FIAP concentra um grande volume de alunos nos intervalos entre aula
 > **Tela 5 — Histórico**
 > *(inserir print aqui)*
 
-### Vídeo/GIF de demonstração
+Vídeo/GIF de demonstração
 > *(inserir link do YouTube ou Google Drive aqui)*
 
 ---
 
-## 🏗️ Decisões Técnicas
+🏗️ Decisões Técnicas
 
-### Estrutura do Projeto
+Estrutura do Projeto
 ```
 fiap-mdi-cp1-cantina-app/
 ├── app/
@@ -96,7 +95,7 @@ fiap-mdi-cp1-cantina-app/
     └── usePedido.ts         # Lógica de pedidos e status
 ```
 
-### Hooks Utilizados
+Hooks Utilizados
 | Hook | Onde | Para quê
 | `useState` | Todas as telas e hooks | Gerenciar estado local (carrinho, filtros, pedido, status)
 | `useEffect` | `CarrinhoScreen`, `AcompanharScreen`, `ConfirmacaoScreen` | Polling de status, animações de entrada, listeners
@@ -105,7 +104,7 @@ fiap-mdi-cp1-cantina-app/
 | `usePedido` (custom) | `CarrinhoScreen` | Encapsula o fluxo de realização de pedido e simulação de status
 | `useRef` que usamos no confirmacao.tsx para as animações, e menciona o Context API (AppProvider, useCarrinhoContext, usePedidoContext) na seção de decisões técnicas
 
-### Como a Navegação foi Organizada
+Como a Navegação foi Organizada
 O projeto utiliza **Expo Router** com estrutura de arquivos:
 - **Tab Navigator** (`app/(tabs)/`): Navegação principal entre Cardápio, Meu Pedido e Histórico
 - **Stack Navigator** (`app/_layout.tsx`): Para telas modais (Carrinho) e telas de fluxo (Confirmação)
